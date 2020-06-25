@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment 1</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+		<script src="app.js"></script>
+
+	</head>
+	<body ng-app="LunchCheck">
+		<h1>Assignment 1</h1>
+		<h2>Coursera, AngularJS</h2>
+		<h3>Enter food you eat for lunch</h3>
+		<div ng-controller="LunchCheckController">
+			<input type="text" ng-model="food">
+			<button ng-click="check()">Check If Too Much</button>
+			<hr><br>
+			{{ message }}
+		</div>
+	</body>
+</html>
